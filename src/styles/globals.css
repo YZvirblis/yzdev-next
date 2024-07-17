@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add theme specific styles */
+html.light {
+  --bg-color: theme("colors.light.background");
+  --text-color: theme("colors.light.text");
+}
+
+html.dark {
+  --bg-color: theme("colors.dark.background");
+  --text-color: theme("colors.dark.text");
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
