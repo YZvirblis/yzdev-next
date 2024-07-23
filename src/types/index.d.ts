@@ -7,8 +7,9 @@ export interface Project {
   title: string;
   description: string;
   technologies: Skill[];
-  image: string;
+  image?: string;
   link: string;
+  demo?: string;
 }
 
 export interface Category {
